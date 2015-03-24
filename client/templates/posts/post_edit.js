@@ -1,7 +1,7 @@
-Template.postedit.created = function() {
+Template.postEdit.created = function() {
 	Session.set('postEditErrors', {});
 }
-Template.postedit.helpers({
+Template.postEdit.helpers({
 	errorMessage: function(field) {
 		return Session.get('postEditErrors')[field];
 	},
@@ -10,7 +10,7 @@ Template.postedit.helpers({
 	}
 });
 
-Template.postedit.events({
+Template.postEdit.events({
 	'submit form': function(e) {
 		e.preventDefault();
 
